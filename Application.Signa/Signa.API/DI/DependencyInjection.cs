@@ -15,6 +15,8 @@ namespace Signa.API.DI
             });
 
             builder.Services.AddScoped<IPessoaRepository, PessoaRepository>();
+
+            builder.Services.AddCors();
         }
     }
 }

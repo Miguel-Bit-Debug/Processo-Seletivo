@@ -1,0 +1,30 @@
+:host {
+  table {
+    width: 100%;
+    border: 1px solid #EEE;
+    border-radius: 2px;
+  }
+
+  .show {
+    margin-bottom: 5px;
+    border-style: none;
+    border-radius: 5px;
+    color: #FFF;
+    margin: 5px;
+    width: 150px;
+    font-size: 20px;
+    background-color: #7d8bda;
+
+  }
+
+  .container {
+    padding: 50px 80px;
+  }
+
+  .icon {
+    background-color: #fff;
+    border: none;
+    border-style: none;
+    cursor: pointer;
+  }
+}
