@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Signa.API.Controllers.InputModel;
 using Signa.Domain.Interfaces.Repositories;
+using Signa.Domain.Models;
 
 namespace Signa.API.Controllers
 {
@@ -27,6 +29,19 @@ namespace Signa.API.Controllers
             var pessoa = _pessoaRepository.BuscarPessoaPorId(id);
 
             return Ok(pessoa);
+        }
+
+        [HttpPut]
+        public IActionResult AtualizarNomePessoa([FromBody] PessoaInputModel input)
+        {
+            var result = _pessoaRepository.AtualizarNomePessoa(input.PessoaId, input.NovoNome);
+
+            if(result == false)
+            {
+                return BadRequest("Erro ao atualizar nome.");
+            }
+
+            return Ok("Nomw atualizado com sucesso");
         }
     }
 }

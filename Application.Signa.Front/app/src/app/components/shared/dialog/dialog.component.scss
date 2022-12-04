@@ -1,0 +1,20 @@
+:host {
+  input {
+    border-style: none;
+    border: 1px solid #EEE;
+    height: 30px;
+    box-shadow: none;
+    outline: 0;
+    width: 90%;
+  }
+
+  button {
+    width: 100%;
+    border: none;
+    background-color: #7d8bda;
+    border-radius: 5px;
+    height: 30px;
+    color: #FFF;
+    cursor: pointer;
+  }
+}

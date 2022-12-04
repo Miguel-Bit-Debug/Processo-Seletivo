@@ -6,5 +6,6 @@ namespace Signa.Domain.Interfaces.Repositories
     {
         IEnumerable<Pessoa> ListarPessoas();
         Pessoa BuscarPessoaPorId(int id);
+        bool AtualizarNomePessoa(int pessoaId, string nome);
     }
 }

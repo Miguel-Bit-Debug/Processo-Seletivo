@@ -1,0 +1,12 @@
+<h1>Informações pessoais</h1>
+
+<hr>
+
+<input [(ngModel)]="nome" type="text" placeholder="Digite um novo nome aqui">
+
+<p mat-dialog-title>Código: {{data.PessoaId}}</p>
+<p mat-dialog-title>Nome Fantasia: {{data.NomeFantasia}}</p>
+<p mat-dialog-title>CPF/CNPJ: {{data.CpfCnpj}}</p>
+
+
+<button (click)="saveNamePerson(data.PessoaId)">Salvar novo nome</button>
